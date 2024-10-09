@@ -1,0 +1,95 @@
+body {
+    font-family: 'Eight-Bit Madness', sans-serif; /* Utilise la police chargée */
+    background-color: #000; /* Fond noir pour une ambiance hacker */
+    color: #00ff00; /* Texte vert fluo */
+}
+
+.main {
+    align-content: center;
+    border: 10px solid #00ff00;
+    width: 90%;
+    border-color: #00ff00;
+    margin: 20px auto;
+}
+
+.main h1 {
+    font-size: 70pt; /* Lumière néon */ 
+    text-align: center;              
+}
+
+@font-face {
+    font-family: 'Eight-Bit Madness';
+    src: url('police.ttf') format('truetype'); /* Chemin vers le fichier .ttf */
+    font-weight: normal; /* Ou bold, selon ton besoin */
+    font-style: normal; /* Ou italic, selon ton besoin */
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    51% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.box1 {
+    float: left;
+    width: 60%;
+    height: 100px;
+    border-radius: 5px;
+    padding: 1em;
+  }
+
+.box2 {
+    float: right;
+    width: 30%;
+    height: 100px;
+    border-radius: 5px;
+    padding: 1em;
+    font-family: 'Eight-Bit Madness', sans-serif; /* Utilise la police chargée */ /* Fond noir pour une ambiance hacker */
+    font-size: 20pt;
+}
+
+.v-line{
+    border-left: thick solid #00ff00;
+    height:50%;
+    left: 65%;
+    position: absolute;
+   }
+
+
+
+.act-nav {
+    animation: flicker 0.5s infinite;
+}
+
+.box2 a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+
+.game-block {
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 40pt;
+}
+
+.play-btn {
+    text-align: right;
+    margin-right: 10%;
+    transform: translateY(-75px);
+}
+.play-btn a {
+    text-decoration: none;
+    color: #00ff00;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16pt;
+ }
+
+h3 {font-size: 40pt;}
+p {font-size: 15pt;}
